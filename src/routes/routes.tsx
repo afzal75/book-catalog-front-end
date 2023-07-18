@@ -3,8 +3,8 @@ import App from '../App'
 // import NotFound from '../pages/NotFound'
 import Home from '../pages/Home'
 // import Books from '../pages/Books'
-// import SignUp from '../pages/SignUp'
-// import Login from '../pages/Login'
+import SignUp from '../pages/SignUp'
+import Login from '../pages/Login'
 // import WishList from '../pages/WishList'
 // import SingleBook from '../pages/SingleBook'
 // import PrivateRoute from './PrivateRoute'
@@ -34,14 +34,14 @@ const routes = createBrowserRouter([
     //       </PrivateRoute>
     //     ),
     //   },
-    //   {
-    //     path: '/signUp',
-    //     element: <SignUp />,
-    //   },
-    //   {
-    //     path: '/login',
-    //     element: <Login />,
-    //   },
+      {
+        path: '/signUp',
+        element: <SignUp />,
+      },
+      {
+        path: '/login',
+        element: <Login />,
+      },
     ],
   },
 
