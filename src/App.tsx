@@ -1,9 +1,11 @@
+import MainLayout from "./layout/MainLayout"
 
 
 function App() {
-
   return (
-    <div>JJJJJJJ</div>
+    <>
+      <MainLayout />
+    </>
   )
 }
 
