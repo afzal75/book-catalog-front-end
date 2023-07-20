@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <section className='banner w-full'>
         <Search setSearchTerm={setSearchTerm} />
-        <img className='w-full' src='banner.jpeg' alt='book/image' />
+        <img className='w-full' src='banner.png' alt='book/image' />
         {/* bookList component */}
         <BookList searchTerm={searchTerm} />
       </section>

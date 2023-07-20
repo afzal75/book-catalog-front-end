@@ -68,7 +68,7 @@ export default function AddNewDialog() {
   return (
     <Fragment>
       <Button onClick={handleOpen} variant='outlined' size='sm' fullWidth>
-        Add New
+        Add New Book
       </Button>
       <Dialog
         open={open}

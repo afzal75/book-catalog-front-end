@@ -26,6 +26,10 @@ const routes = createBrowserRouter([
         path: '/books/:id',
         element: <SingleBook />,
       },
+      // {
+      //   path: '/wishlist',
+      //   element: <WishList />,
+      // },
       {
         path: '/wishlist',
         element: (

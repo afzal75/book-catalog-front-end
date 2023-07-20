@@ -1,3 +1,11 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable no-unsafe-optional-chaining */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { useState, useEffect } from 'react'
 import {
   Card,
@@ -15,8 +23,8 @@ import {
 } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { useAddToWishListMutation } from '../../redux/features/books/bookApiSlice'
 import { ItemCardProps } from '../AddNewDialog'
+import { useAddToWishListMutation } from '../../redux/features/Book/bookApiSlice'
 
 // Define the type for localStorageColors
 type LocalStorageColors = {
@@ -26,7 +34,6 @@ type LocalStorageColors = {
 export default function CompletedCard({ item }: ItemCardProps) {
   const [localStorageColors, setLocalStorageColors] =
     useState<LocalStorageColors>({})
-  //   console.log(item?.bookId?.author)
 
   const { title, author, genre, image, publicationDate, _id } = item?.bookId
   

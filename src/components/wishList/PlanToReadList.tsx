@@ -1,6 +1,14 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable no-unsafe-optional-chaining */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import CurrentUserEmail from '../../layouts/CurrentUserEmail'
 import Loader from '../../layouts/Spinner'
-import { useGetAllWishListQuery } from '../../redux/features/books/bookApiSlice'
+import { useGetAllWishListQuery } from '../../redux/features/Book/bookApiSlice'
 import PlanToReadCard from './PlanToReadCard'
 
 export default function PlanToReadList() {
