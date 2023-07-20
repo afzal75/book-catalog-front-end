@@ -5,9 +5,9 @@ import Home from '../pages/Home'
 import Books from '../pages/Books'
 import SignUp from '../pages/SignUp'
 import Login from '../pages/Login'
-import WishList from '../pages/WishList'
 import SingleBook from '../pages/SingleBook'
 import PrivateRoute from './PrivateRoute'
+import WishList from '../pages/WishList'
 
 const routes = createBrowserRouter([
   {
@@ -26,10 +26,6 @@ const routes = createBrowserRouter([
         path: '/books/:id',
         element: <SingleBook />,
       },
-      // {
-      //   path: '/wishlist',
-      //   element: <WishList />,
-      // },
       {
         path: '/wishlist',
         element: (
