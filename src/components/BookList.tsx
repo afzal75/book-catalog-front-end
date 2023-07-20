@@ -1,15 +1,15 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import BookCard from './BookCard'
 import { CreateBookFormValues } from './AddNewDialog'
-import {
-  useSearchBooksQuery,
-} from '../redux/features/books/bookApiSlice'
 import Loader from '../layouts/Spinner';
+import { useSearchBooksQuery } from '../redux/features/Book/bookApiSlice';
 
 export default function BookList({ searchTerm }: any) {
-  // const { data: books, isLoading, isError } = useGetBooksQuery()
-  // const { data: books, isLoading, isError } = useSearchBooksQuery(searchTerm)
-
-  // console.log(books?.data)
+  
   const { data: books, isLoading, isError  } = useSearchBooksQuery(searchTerm, {
     refetchOnMountOrArgChange: true,
     pollingInterval: 500,
