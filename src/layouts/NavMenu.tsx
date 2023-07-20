@@ -31,7 +31,7 @@ const NavMenu = () => {
           variant='h6'
           className='mr-4 cursor-pointer py-1.5'
         >
-          <Link to='/'>Book Catalog</Link>
+          <Link to='/'>Book</Link>
         </Typography>
 
         <div className='hidden lg:block'>

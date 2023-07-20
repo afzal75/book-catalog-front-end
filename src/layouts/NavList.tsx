@@ -1,11 +1,11 @@
 import { Typography, Button } from '@material-tailwind/react'
 import { Link } from 'react-router-dom'
-// import AddNewDialog from '../components/AddNewDialog'
 import Cookies from 'js-cookie'
 import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import { getAccessToken } from '../redux/api/apiSlice'
 import { toast } from 'react-toastify'
+import AddNewDialog from '../components/AddNewDialog'
 
 export default function NavList() {
   const navigate = useNavigate()
@@ -69,7 +69,7 @@ export default function NavList() {
             color='blue-gray'
             className='p-1 font-medium'
           >
-            {/* <AddNewDialog /> */}
+            <AddNewDialog />
           </Typography>
         )}
 

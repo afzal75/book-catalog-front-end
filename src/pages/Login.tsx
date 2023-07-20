@@ -14,8 +14,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Cookies from 'js-cookie'
 import { useLoginMutation } from '../redux/features/user/userApiSlice'
 import { toast } from 'react-toastify'
-// import Loader from '../layouts/Spinner'
-import Loader from '../layout/Spinner'
+import Loader from '../layouts/Spinner'
 
 type LoginFormValues = {
   email: string

@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Fragment, useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { XMarkIcon } from '@heroicons/react/24/outline'
@@ -9,8 +12,8 @@ import {
   Button,
   IconButton,
 } from '@material-tailwind/react'
-import { useCreateBookMutation } from '../redux/features/books/bookApiSlice'
 import { toast } from 'react-toastify'
+import { useCreateBookMutation } from '../redux/features/Book/bookApiSlice'
 
 export type CreateBookFormValues = {
   bookId: {
