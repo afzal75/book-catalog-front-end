@@ -1,3 +1,12 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable no-unsafe-optional-chaining */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import { useState, useEffect } from 'react';
 import {
   Card,
@@ -14,11 +23,9 @@ import {
   CheckBadgeIcon,
 } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
-import {
-  useAddToWishListMutation,
-} from '../redux/features/books/bookApiSlice';
 import { toast } from 'react-toastify';
 import { BookCardProps } from './AddNewDialog';
+import { useAddToWishListMutation } from '../redux/features/Book/bookApiSlice';
 
 // Define the type for localStorageColors
 type LocalStorageColors = {
